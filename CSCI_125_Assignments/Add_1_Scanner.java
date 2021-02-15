@@ -1,4 +1,5 @@
 import java.util.Scanner;
+// Create a class that takes an integer and prints the integer + 1
 public class Add_1_Scanner {
 
 	public static void main(String[] args) {

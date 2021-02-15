@@ -1,4 +1,4 @@
-
+// Create a class that adds two integers and prints the sum
 public class Sum_Two_Num {
 
 	public static void main(String[] args) {
