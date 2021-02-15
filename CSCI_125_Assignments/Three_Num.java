@@ -1,4 +1,5 @@
 import java.util.Scanner;
+// Write a Java program that contains a method to Take three numbers from the user and print the greatest number
 public class Three_Num {
 
 	public static void main(String[] args) {
