@@ -11,8 +11,9 @@ public class BulkDiscount extends DiscountPolicy {
 	
 	double computeDiscount(int count, double itemCost) {
 		if (count > minimum) {
-			return percent; 
-		} return percent; 
+			return percent * count * itemCost; 
+		} 
+		return 0;
 	} 
 	
 	public static void main(String[] args) {
