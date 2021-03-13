@@ -9,6 +9,7 @@ public class BulkDiscount extends DiscountPolicy {
 		percent = p; 
 	}
 	
+	@Override
 	double computeDiscount(int count, double itemCost) {
 		if (count > minimum) {
 			return percent * count * itemCost; 
