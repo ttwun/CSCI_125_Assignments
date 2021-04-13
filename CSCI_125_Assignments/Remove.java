@@ -7,15 +7,30 @@ import java.util.Arrays;
 public class Remove {
 	 static int[] remove (int v, int[] n) {
 		 int[] out = new int[n.length]; 
-		
+		 int count = 0; 
+		 
 	        for (int i = 0, k = 0; i < n.length; i++) { 
 	
 	            if (v == n[i]) { 
-	                continue;
+	                out[i] = 0;
 	            } 
-	            out[k++] = n[i];
+	           
+	            else {
+	            	out[i] = 1;
+	            	count++;
+	            }
 	        }
-	        return out;
+	       
+	        int [] removed_array = new int[count];
+	        
+	        for (int i=0, k=0; i<out.length; i++) {
+	        	
+	        	if (out[i] == 1) {
+	        		removed_array[k] = n[i];
+	        		k++;
+	        	}
+	        }
+	        return removed_array;
 	            
 	 }
 	 public static void main (String[] args) {
